@@ -1,20 +1,14 @@
 # lustre
 
-A growing collection of visual polish and motion components for React. Small, self-contained utilities for the layer that makes interfaces feel designed — texture, atmosphere, subtle motion.
+A collection of visual polish and motion components for React. Small, self-contained utilities for texture, atmosphere, subtle motion.
 
-Zero runtime dependencies — only React is required.
+Zero runtime dependencies, only React is required.
 
 ---
 
 ## Installation
 
-For now, copy the component file(s) you need directly into your project. A proper npm package is planned once the collection has more components.
-
-```bash
-# Future npm install (coming soon):
-# bun add lustre
-# npm install lustre
-```
+For now, copy the component file(s) you need directly into your project.
 
 ---
 
@@ -45,14 +39,14 @@ import { Grain } from "./grain";
 
 #### Props
 
-| Prop         | Type     | Default        | Description                                               |
-|--------------|----------|----------------|-----------------------------------------------------------|
+| Prop         | Type     | Default        | Description                                                |
+| ------------ | -------- | -------------- | ---------------------------------------------------------- |
 | `size`       | `number` | `1`            | Physical grain size — larger values produce chunkier grain |
-| `contrast`   | `number` | `1.25`         | Grain sharpness — `1` = soft clouds, `5+` = sharp static  |
+| `contrast`   | `number` | `1.25`         | Grain sharpness — `1` = soft clouds, `5+` = sharp static   |
 | `numOctaves` | `number` | `3`            | Number of noise layers — more octaves add complexity       |
-| `opacity`    | `number` | `0.4`          | Overall grain intensity (`0`–`1`)                         |
-| `blendMode`  | `string` | `"soft-light"` | CSS `mix-blend-mode` for compositing with content below   |
-| `className`  | `string` | —              | Additional classes applied to the outer wrapper element   |
+| `opacity`    | `number` | `0.4`          | Overall grain intensity (`0`–`1`)                          |
+| `blendMode`  | `string` | `"soft-light"` | CSS `mix-blend-mode` for compositing with content below    |
+| `className`  | `string` | —              | Additional classes applied to the outer wrapper element    |
 
 #### How it works
 
@@ -64,4 +58,4 @@ React's `useId()` ensures each instance gets a unique filter ID, so multiple `<G
 
 ## More components coming
 
-This collection grows as useful patterns emerge from real projects.
+This collection grows as useful patterns emerge from my projects.
