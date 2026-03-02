@@ -1,15 +1,15 @@
 {
-  "name": "grain-react",
+  "name": "lustre",
   "version": "0.1.0",
   "type": "module",
-  "description": "A procedural SVG grain/noise texture overlay component for React",
-  "main": "./src/grain.tsx",
+  "description": "A collection of visual polish and motion components for React",
+  "main": "./src/index.ts",
   "exports": {
-    ".": "./src/grain.tsx"
+    ".": "./src/index.ts"
   },
   "peerDependencies": {
     "react": ">=18"
   },
-  "keywords": ["react", "grain", "texture", "noise", "svg", "overlay"],
+  "keywords": ["react", "grain", "texture", "noise", "motion", "overlay", "polish"],
   "license": "MIT"
 }
