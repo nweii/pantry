@@ -1,0 +1,15 @@
+{
+  "name": "grain-react",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A procedural SVG grain/noise texture overlay component for React",
+  "main": "./src/grain.tsx",
+  "exports": {
+    ".": "./src/grain.tsx"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "keywords": ["react", "grain", "texture", "noise", "svg", "overlay"],
+  "license": "MIT"
+}
