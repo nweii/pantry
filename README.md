@@ -1,6 +1,6 @@
 # lustre
 
-A collection of visual polish and motion components for React. Small, self-contained utilities for texture, atmosphere, subtle motion.
+A collection of visual polish and motion components for React.
 
 Zero runtime dependencies, only React is required.
 
