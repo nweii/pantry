@@ -1,7 +1,7 @@
 {
   "components": {
     "grain": {
-      "description": "A procedural SVG grain/noise texture overlay component for React.",
+      "description": "A procedural SVG grain/noise texture overlay component for React. Renders as an absolutely-positioned overlay using SVG feTurbulence filters — no external dependencies beyond React.",
       "files": [
         "src/grain.tsx"
       ],

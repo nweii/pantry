@@ -1,5 +1,4 @@
-// ABOUTME: A procedural SVG grain/noise texture overlay component for React.
-// ABOUTME: Renders as an absolutely-positioned overlay using SVG feTurbulence filters — no external dependencies beyond React.
+// ABOUTME: A procedural SVG grain/noise texture overlay component for React. Renders as an absolutely-positioned overlay using SVG feTurbulence filters — no external dependencies beyond React.
 
 import { useId } from "react";
 
@@ -17,14 +16,7 @@ interface GrainProps {
   className?: string;
 }
 
-export function Grain({
-  size = 1,
-  contrast = 1.25,
-  numOctaves = 3,
-  opacity = 0.4,
-  blendMode = "soft-light",
-  className,
-}: GrainProps) {
+export function Grain({ size = 1, contrast = 1.25, numOctaves = 3, opacity = 0.4, blendMode = "soft-light", className }: GrainProps) {
   const id = useId();
   const filterId = `grain-${id.replace(/:/g, "")}`;
 
@@ -45,17 +37,11 @@ export function Grain({
         inset: 0,
         overflow: "hidden",
         pointerEvents: "none",
-      }}
-    >
+      }}>
       <svg style={{ position: "absolute", width: 0, height: 0 }}>
         <defs>
           <filter id={filterId}>
-            <feTurbulence
-              type="fractalNoise"
-              baseFrequency={baseFrequency}
-              numOctaves={numOctaves}
-              stitchTiles="stitch"
-            />
+            <feTurbulence type="fractalNoise" baseFrequency={baseFrequency} numOctaves={numOctaves} stitchTiles="stitch" />
             {/* Convert to grayscale */}
             <feColorMatrix type="saturate" values="0" />
 
