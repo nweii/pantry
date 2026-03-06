@@ -1,0 +1,11 @@
+{
+  "components": {
+    "grain": {
+      "description": "A procedural SVG grain/noise texture overlay component for React.",
+      "files": [
+        "src/grain.tsx"
+      ],
+      "dependencies": []
+    }
+  }
+}

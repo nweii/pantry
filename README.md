@@ -1,14 +1,22 @@
-# lustre
+# forge
 
-A collection of visual polish and motion components for React.
-
-Zero runtime dependencies, only React is required.
+A personal toolkit of React components and effects. Components are copied into your project as raw source so you own them and can tweak them freely.
 
 ---
 
-## Installation
+## Usage
 
-For now, copy the component file(s) you need directly into your project.
+```bash
+# List available components:
+bunx github:nweii/forge list
+
+# Add a component to your project:
+bunx github:nweii/forge add grain
+```
+
+The component file is written to your current directory. Install any listed dependencies, then import as needed.
+
+> Once published to npm, `bunx forge add <component>` will work without the `github:` prefix.
 
 ---
 
@@ -56,6 +64,10 @@ React's `useId()` ensures each instance gets a unique filter ID, so multiple `<G
 
 ---
 
-## More components coming
+## Adding a component (for contributors)
 
-This collection grows as useful patterns emerge from my projects.
+1. Create `src/new-component.tsx` with an ABOUTME header and standard imports
+2. `git commit` — the pre-commit hook runs `scripts/sync.js` automatically, which regenerates `registry.json` and `src/index.ts` and stages them into the commit
+3. Push — the component is immediately available via the CLI
+
+Run `bun install` once after cloning to install the pre-commit hook.

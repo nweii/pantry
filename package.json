@@ -1,15 +1,28 @@
 {
-  "name": "lustre",
+  "name": "forge",
   "version": "0.1.0",
   "type": "module",
-  "description": "A collection of visual polish and motion components for React",
+  "description": "A personal toolkit of React components and effects",
+  "bin": {
+    "forge": "./bin/forge.js"
+  },
+  "scripts": {
+    "sync": "bun scripts/sync.js",
+    "prepare": "node_modules/.bin/simple-git-hooks"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "PATH=\"/opt/homebrew/bin:$PATH\" bun run sync && git add registry.json src/index.ts"
+  },
   "main": "./src/index.ts",
   "exports": {
     ".": "./src/index.ts"
   },
+  "devDependencies": {
+    "simple-git-hooks": "latest"
+  },
   "peerDependencies": {
     "react": ">=18"
   },
-  "keywords": ["react", "grain", "texture", "noise", "motion", "overlay", "polish"],
+  "keywords": ["react", "components", "toolkit"],
   "license": "MIT"
 }
