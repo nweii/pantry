@@ -33,7 +33,7 @@ The pre-commit hook runs `bun run sync` and stages `registry.json` and `src/inde
 
 ## File conventions
 
-- All files start with two `// ABOUTME: ` comment lines
+- All files start with an `// ABOUTME: ` comment line
 - Components export named exports (not default exports)
 - No external runtime dependencies beyond React — keep components self-contained
 - `react` peer dep requires `>=18` (components may use `useId` and other React 18 hooks)
