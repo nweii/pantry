@@ -64,7 +64,7 @@ React's `useId()` ensures each instance gets a unique filter ID, so multiple `<G
 
 ---
 
-## Adding a component (for contributors)
+## Adding a component
 
 1. Create `src/new-component.tsx` with an ABOUTME header and standard imports
 2. `git commit` — the pre-commit hook runs `scripts/sync.js` automatically, which regenerates `registry.json` and `src/index.ts` and stages them into the commit
