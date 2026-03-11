@@ -1,8 +1,8 @@
 #!/usr/bin/env bun
-// ABOUTME: CLI for fetching forge components into a project as raw source.
+// ABOUTME: CLI for fetching pantry components into a project as raw source.
 // ABOUTME: Components are copied into the project so you own and can modify them.
 
-const REPO = "nweii/forge";
+const REPO = "nweii/pantry";
 const BRANCH = "main";
 const REGISTRY_URL = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/registry.json`;
 const RAW_BASE = `https://raw.githubusercontent.com/${REPO}/${BRANCH}`;
@@ -18,7 +18,7 @@ if (command === "list") {
   const meta = registry.components[component];
   if (!meta) {
     console.error(`Unknown component: ${component}`);
-    console.error(`Run 'forge list' to see available components.`);
+    console.error(`Run 'pantry list' to see available components.`);
     process.exit(1);
   }
   for (const file of meta.files) {
@@ -31,5 +31,5 @@ if (command === "list") {
     console.log(`\nInstall dependencies:\n  bun add ${meta.dependencies.join(" ")}`);
   }
 } else {
-  console.log("Usage:\n  forge list\n  forge add <component>");
+  console.log("Usage:\n  pantry list\n  pantry add <component>");
 }

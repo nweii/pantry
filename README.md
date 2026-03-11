@@ -1,4 +1,4 @@
-# forge
+# pantry
 
 A personal toolkit of React components and effects. Components are copied into your project as raw source so you own them and can tweak them freely.
 
@@ -8,15 +8,15 @@ A personal toolkit of React components and effects. Components are copied into y
 
 ```bash
 # List available components:
-bunx github:nweii/forge list
+bunx github:nweii/pantry list
 
 # Add a component to your project:
-bunx github:nweii/forge add grain
+bunx github:nweii/pantry add grain
 ```
 
 The component file is written to your current directory. Install any listed dependencies, then import as needed.
 
-> Once published to npm, `bunx forge add <component>` will work without the `github:` prefix.
+> Once published to npm, `bunx pantry add <component>` will work without the `github:` prefix.
 
 ---
 

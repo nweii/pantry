@@ -1,10 +1,10 @@
 {
-  "name": "forge",
+  "name": "pantry",
   "version": "0.1.0",
   "type": "module",
   "description": "A personal toolkit of React components and effects",
   "bin": {
-    "forge": "./bin/forge.js"
+    "pantry": "./bin/pantry.js"
   },
   "scripts": {
     "sync": "bun scripts/sync.js",

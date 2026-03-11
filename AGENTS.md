@@ -2,7 +2,7 @@ This file provides guidance to AI agents when working with code in this reposito
 
 ## What this is
 
-Forge is a personal toolkit of React components distributed as raw source — consumers run `bunx github:nweii/forge add <component>` to copy a component file directly into their project. There is no build step; components are authored in `src/` and served from GitHub as-is.
+Pantry is a personal toolkit of React components distributed as raw source — consumers run `bunx github:nweii/pantry add <component>` to copy a component file directly into their project. There is no build step; components are authored in `src/` and served from GitHub as-is.
 
 ## Commands
 
@@ -20,7 +20,7 @@ The pre-commit hook runs `bun run sync` and stages `registry.json` and `src/inde
 | `src/*.tsx`       | Component source files — these are what consumers copy into their projects   |
 | `src/index.ts`    | Barrel export — **auto-generated**, do not edit by hand                      |
 | `registry.json`   | Component metadata used by the CLI — **auto-generated**, do not edit by hand |
-| `bin/forge.js`    | CLI entry point: `forge list` / `forge add <component>`                      |
+| `bin/pantry.js`    | CLI entry point: `pantry list` / `pantry add <component>`                      |
 | `scripts/sync.js` | Regenerates registry and index from `src/` on pre-commit                     |
 
 ## Adding a component
